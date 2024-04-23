@@ -19,6 +19,21 @@ export default function App() {
             className="max-w-[380px] w-full h-[300px]"
             resizeMode="contain"
           />
+          <View className="relative mt-5">
+            <Text className="text-3xl font-bold text-center text-white">
+              Discover Endless Possibilities with{" "}
+              <Text className="text-secondary-200">Aora</Text>
+            </Text>
+            <Image
+              source={images.path}
+              className="w-[136px] h-[15px] absolute -bottom-2 -right-8"
+              resizeMode="contain"
+            />
+          </View>
+          <Text className="text-sm text-center text-gray-100 font-pregular mt-7">
+            Where creativity meets innovation: Embark on a journey of limitless
+            exploration with Aora
+          </Text>
         </View>
       </ScrollView>
     </SafeAreaView>
