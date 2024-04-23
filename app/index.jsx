@@ -42,6 +42,7 @@ export default function App() {
           />
         </View>
       </ScrollView>
+      {/* Allows time, battery, and connection to be shown on phone */}
       <StatusBar backgroundColor="#161622" style="light" />
     </SafeAreaView>
   );
