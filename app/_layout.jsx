@@ -1,7 +1,7 @@
-import { StyleSheet, Text, View } from "react-native";
-import React, { useEffect } from "react";
-import { Slot, SplashScreen, Stack } from "expo-router";
+import { useEffect } from "react";
 import { useFonts } from "expo-font";
+import { SplashScreen, Stack } from "expo-router";
+
 import GlobalProvider from "../context/GlobalProvider";
 
 // stops SplashScreen from hiding before hideAsync is called

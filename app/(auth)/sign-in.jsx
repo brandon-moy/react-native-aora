@@ -1,10 +1,11 @@
-import React, { useState } from "react";
-import { View, Text, ScrollView, Image, Alert } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-import { images } from "../../constants";
-import { FormField, CustomButton } from "../../components";
+import { useState } from "react";
 import { Link, router } from "expo-router";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { View, Text, ScrollView, Image, Alert } from "react-native";
+
+import { images } from "../../constants";
 import { signIn } from "../../lib/appwrite";
+import { FormField, CustomButton } from "../../components";
 import { useGlobalContext } from "../../context/GlobalProvider";
 
 const SignIn = () => {
