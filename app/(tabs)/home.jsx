@@ -1,10 +1,16 @@
-import { View, Text } from "react-native";
+import { View, Text, FlatList } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 const Home = () => {
   return (
-    <View>
+    <SafeAreaView>
+      <FlatList
+        data={[]}
+        keyExtractor={(item) => item.$id}
+        renderItem={({ item }) => <Text>{item.id}</Text>}
+      />
       <Text>Home</Text>
-    </View>
+    </SafeAreaView>
   );
 };
 
