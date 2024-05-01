@@ -5,11 +5,20 @@ const Home = () => {
   return (
     <SafeAreaView>
       <FlatList
-        data={[]}
-        keyExtractor={(item) => item.$id}
-        renderItem={({ item }) => <Text>{item.id}</Text>}
+        data={[{ id: 1 }, { id: 2 }, { id: 3 }]}
+        keyExtractor={(item) => item.id}
+        renderItem={({ item }) => <Text className="text-3xl">{item.id}</Text>}
+        ListHeaderComponent={() => (
+          <View className="px-4 my-6 space-y-6">
+            <View className="flex-row items-start justify-between mb-6">
+              <View>
+                <Text>Welcome Back</Text>
+                <Text>brandon</Text>
+              </View>
+            </View>
+          </View>
+        )}
       />
-      <Text>Home</Text>
     </SafeAreaView>
   );
 };
