@@ -32,6 +32,11 @@ const Home = () => {
               </View>
             </View>
             <SearchInput />
+            <View className="flex-1 w-full pt-5 pb-8">
+              <Text className="mb-3 text-lg text-gray-100 font-pregular">
+                Latest Videos
+              </Text>
+            </View>
           </View>
         )}
       />
