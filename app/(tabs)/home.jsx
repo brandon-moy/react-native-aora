@@ -2,10 +2,11 @@ import { View, Text, FlatList, Image } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { images } from "../../constants";
 import SearchInput from "../../components/SearchInput";
+import Trending from "../../components/Trending";
 
 const Home = () => {
   return (
-    <SafeAreaView className="bg-primary">
+    <SafeAreaView className="h-full bg-primary">
       <FlatList
         data={[{ id: 1 }, { id: 2 }, { id: 3 }]}
         keyExtractor={(item) => item.id}
@@ -36,6 +37,7 @@ const Home = () => {
               <Text className="mb-3 text-lg text-gray-100 font-pregular">
                 Latest Videos
               </Text>
+              <Trending posts={[{ id: 1 }, { id: 2 }, { id: 3 }]} />
             </View>
           </View>
         )}
